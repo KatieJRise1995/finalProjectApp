@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="moviesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad's Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2V9-he-sI9">
+                                <rect key="frame" x="328" y="0.0" width="151.5" height="31.5"/>
+                                <color key="backgroundColor" red="0.99211448660000001" green="1" blue="0.99942556699999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LLu-up-17W">
+                                <rect key="frame" x="192" y="94" width="450" height="447"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" id="hPo-NQ-kIV">
+                                        <rect key="frame" x="0.0" y="24.5" width="450" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hPo-NQ-kIV" id="lfD-fT-Npx">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9c-dE-8GP">
+                                <rect key="frame" x="216" y="628" width="166" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Binder Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-UO-FDm">
+                                <rect key="frame" x="433" y="628" width="159" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="iFF-Oq-VKn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" keyboardType="numberPad" textContentType="postal-code"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGH-DL-nqO">
+                                <rect key="frame" x="359" y="711" width="89.5" height="30"/>
+                                <color key="backgroundColor" red="0.99211448660000001" green="1" blue="0.99942556699999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Add Movie">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GhY-kg-r4p"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Movie to the list using the textboxes below!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QP-BO-5Bi">
+                                <rect key="frame" x="192" y="563" width="450" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="tintColor" red="0.28626370400000001" green="0.288538982" blue="0.28837323570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2V9-he-sI9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="29m-z3-BES"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LLu-up-17W" secondAttribute="trailing" constant="126" id="5yC-c8-9Mh"/>
+                            <constraint firstItem="q9c-dE-8GP" firstAttribute="top" secondItem="RjV-UO-FDm" secondAttribute="top" id="6Te-oF-cfv"/>
+                            <constraint firstItem="2V9-he-sI9" firstAttribute="centerX" secondItem="IGH-DL-nqO" secondAttribute="centerX" id="AHH-zC-6Ih"/>
+                            <constraint firstItem="2V9-he-sI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="328" id="BP6-3a-LT5"/>
+                            <constraint firstItem="q9c-dE-8GP" firstAttribute="top" secondItem="1QP-BO-5Bi" secondAttribute="bottom" constant="41" id="K79-7C-66A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RjV-UO-FDm" secondAttribute="trailing" constant="176" id="LHL-yC-OCS"/>
+                            <constraint firstItem="LLu-up-17W" firstAttribute="trailing" secondItem="1QP-BO-5Bi" secondAttribute="trailing" id="MDA-WW-9zJ"/>
+                            <constraint firstItem="LLu-up-17W" firstAttribute="top" secondItem="2V9-he-sI9" secondAttribute="bottom" constant="62.5" id="MXs-zA-Yts"/>
+                            <constraint firstItem="IGH-DL-nqO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="359" id="TKS-Vo-xXe"/>
+                            <constraint firstItem="q9c-dE-8GP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="216" id="UjU-zC-ovg"/>
+                            <constraint firstItem="RjV-UO-FDm" firstAttribute="leading" secondItem="q9c-dE-8GP" secondAttribute="trailing" constant="51" id="a0J-90-wwd"/>
+                            <constraint firstItem="1QP-BO-5Bi" firstAttribute="top" secondItem="LLu-up-17W" secondAttribute="bottom" constant="22" id="drL-ar-R0c"/>
+                            <constraint firstItem="LLu-up-17W" firstAttribute="leading" secondItem="1QP-BO-5Bi" secondAttribute="leading" id="fOC-HI-2wE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IGH-DL-nqO" secondAttribute="bottom" constant="283" id="fzI-bV-aVL"/>
+                            <constraint firstItem="LLu-up-17W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="192" id="uWF-bR-kWO"/>
+                            <constraint firstItem="IGH-DL-nqO" firstAttribute="top" secondItem="q9c-dE-8GP" secondAttribute="bottom" constant="49" id="xCX-BC-npm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bluRayTable" destination="LLu-up-17W" id="lvg-XU-u6L"/>
+                        <outlet property="btnSave" destination="IGH-DL-nqO" id="4Og-Co-jUQ"/>
+                        <outlet property="movieLocation" destination="RjV-UO-FDm" id="gbJ-1N-AAC"/>
+                        <outlet property="movieName" destination="q9c-dE-8GP" id="p1j-bb-eor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.6875" y="72.65625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

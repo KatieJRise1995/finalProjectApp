@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLightning.png" translatesAutoresizingMaskIntoConstraints="NO" id="iU2-uA-OtX">
+                                <rect key="frame" x="0.0" y="0.0" width="790" height="1024"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVIES APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rb-Dz-5tc">
+                                <rect key="frame" x="209" y="106" width="384" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="69"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Rb-Dz-5tc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="4QC-7w-31e"/>
+                            <constraint firstItem="iU2-uA-OtX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Qz-Oi-ojb"/>
+                            <constraint firstItem="3Rb-Dz-5tc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="209" id="s9Z-da-pRF"/>
+                            <constraint firstItem="iU2-uA-OtX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="stj-T3-ziJ"/>
+                            <constraint firstItem="iU2-uA-OtX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="t1t-xr-QfU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iU2-uA-OtX" secondAttribute="trailing" constant="-42" id="xhD-En-b4w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.34375" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashLightning.png" width="481" height="540"/>
+    </resources>
+</document>
